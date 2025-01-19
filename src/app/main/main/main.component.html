@@ -1,3 +1,19 @@
-<app-server-status></app-server-status>
-<app-traffic></app-traffic>
-<app-support-tickets></app-support-tickets>
+<main>
+    <div id="dashboard">
+
+        <app-main-model [datosHeader]="headerParaServerStatus">
+            <app-server-status></app-server-status>
+        </app-main-model>
+
+
+        <app-main-model [datosHeader]="headerParaTraffic">
+            <app-traffic></app-traffic>
+        </app-main-model>
+        
+
+        <app-main-model [datosHeader]="headerParaSupportTickets">
+            <app-support-tickets></app-support-tickets>
+        </app-main-model>
+
+    </div>
+</main>
